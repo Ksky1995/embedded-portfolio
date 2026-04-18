@@ -1,7 +1,7 @@
 # PAING HEIN KHANT
 **Electronic Engineer (BE Ec)** | **Service Engineer @ Concordia Public Co., Ltd**
 
-Technical lead for the repair and calibraion for high-precision electronic systems. My work focuses on maintaining millimeter-level accuracy in industrial instrumentation and developing 4-layer embedded pcb design
+Technical lead for the repair and calibraion for high-precision Survey instruments. My work focuses on maintaining millimeter-level accuracy in industrial instrumentation and developing 4-layer embedded pcb design and edge Ai development
 
 ---
 
