@@ -18,7 +18,7 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 ---
 
 ### SERVICE ENGINEER (TOPCON & SOKKIA)
-**[Hardware Diagnostics Portfolio](./hardware-diagnostics/)**
+[Topcon & Sokkia Survey Instruments Repair and Calibration](./topcon-sokkia-service-technician/)
 
 * **OEM Factory Expertise** — Received on-site training from **Topcon Malaysia** experts; strictly following **SOPs** for the calibartion and board-level repair of Topcon & Sokkia systems.
 * **Precision Validation** — **Standard Collimator Calibrations** and rigorous inspections to guarantee sub-millimeter field accuracy.
