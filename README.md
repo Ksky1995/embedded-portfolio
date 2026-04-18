@@ -7,11 +7,13 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 ---
 
 ## TECHNICAL CORE
+
 | Domain | Specialization | Tools |
-| **PCB Design** | 4-Layer FR4 / 50Ω Matching / Differential Pairs | Altium / KiCad |
-| **Service Engineering** | Topcon & Sokkia OEM Standards / RCA | Precision Collimators |
-| **Hardware Debug** | Board-Level Recovery / Signal Analysis | Oscilloscope / SMD Rework |
-| **Embedded AI** | Edge CV (EAR) / ESP32-CAM | Python / C |
+| :--- | :--- | :--- |
+| **PCB Design** | 4-Layer FR4 / 50Ω Matching / Differential Pairs | Altium / KiCad / LTspice |
+| **Service Engineering** | OEM Standards / RCA / Optical Calibration | Topcon / Sokkia / Collimators |
+| **Hardware Debug** | Board-Level Recovery / Signal Analysis / Rework | Oscilloscope / Multimeter / Soldering |
+| **Embedded AI** | Edge CV (EAR) / Computer Vision | ESP32-CAM / Python / C |
 
 ---
 
