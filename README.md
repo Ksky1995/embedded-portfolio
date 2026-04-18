@@ -39,7 +39,7 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 * **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
 
-##EDGE AI & IoT INTEGRATION
+## EDGE AI & IoT INTEGRATION
 **[Intelligence Hub](./ai-learning/)** — *Computer Vision & IoT Research*
 
 #### **Driver Drowsiness System (PoC)**
