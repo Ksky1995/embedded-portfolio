@@ -31,7 +31,7 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 **Featured Engineering Portfolio**
 
 #### **[STM32 Wireless Control Unit](./stm32-pcb/)** — *4-Layer RF Design*
-* **RF & Impedance** — Architected a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
+* **RF & Impedance** — Implemented a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
 * **Industrial Hardening** — Integrated dedicated **USB-C ESD protection** and optimized dual-crystal clocking (HSE/LSE) to ensure high-speed signal stability and timing precision.
 
 #### **[Precision Motion & Power Platform](./motion-pcb/)** — *Multi-Domain System Design*
@@ -39,6 +39,13 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 * **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
 
-## CURRENT DIRECTION
-* **Edge AI**: Implementing Driver Drowsiness Systems (EAR algorithm) on ESP32-CAM.
-* **Collaboration**: Studying Japanese (N5) for international engineering standards.
+## 03 // EDGE AI & IoT INTEGRATION
+**[Intelligence Hub](./ai-learning/)** — *Computer Vision & IoT Research*
+
+#### **Driver Drowsiness System (PoC)**
+* **Inference Logic** — Developed a real-time **Eye Aspect Ratio (EAR)** algorithm utilizing **Mediapipe** and **OpenCV** to monitor fatigue thresholds via local vision stream.
+* **Algorithm Validation** — Successfully prototyped facial landmark detection to calculate drowsiness metrics with high temporal resolution on a local environment.
+
+#### **ESP32-CAM IoT Implementation**
+* **Remote Capture System** — Engineered a **Telegram Bot API** interface allowing remote image acquisition via secure `/photo` command triggers.
+* **Firmware Optimization** — Implemented Wi-Fi stack management on the ESP32 to handle asynchronous HTTP requests and JPEG stream buffering.
