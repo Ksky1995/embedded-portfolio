@@ -49,3 +49,13 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 #### **ESP32-CAM IoT Implementation**
 * **Remote Capture System** — Engineered a **Telegram Bot API** interface allowing remote image acquisition via secure `/photo` command triggers.
 * **Firmware Optimization** — Implemented Wi-Fi stack management on the ESP32 to handle asynchronous HTTP requests and JPEG stream buffering.
+---
+
+## // ENGINEERING GALLERY
+<p align="center">
+  <img src="./assets/pcb-3d-render.png" width="45%" alt="4-Layer RF Layout" />
+  <img src="./assets/service-bench.jpg" width="45%" alt="Topcon Calibration" />
+</p>
+<p align="center">
+  <i>Left: 3D Visualization of the STM32 Wireless Control Unit. Right: Precision optical calibration of Topcon Total Station.</i>
+</p>
