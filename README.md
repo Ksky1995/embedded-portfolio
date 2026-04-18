@@ -1,6 +1,6 @@
 # PAING HEIN KHANT
 
-*Electronics Engineer (BE Ec)*
+*Electronics Engineer*
 
 Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instrumentation and the design of high-density embedded PCBs (RF & Mixed-Signal). Currently developing Edge AI models to bridge industrial hardware with intelligent computer vision.
 
@@ -30,11 +30,11 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 ## EMBEDDED SYSTEMS PCB ARCHITECTURE
 **Featured Engineering Portfolio**
 
-#### **[STM32 Wireless Control Unit](./stm32-pcb/)** — *4-Layer RF Design*
+#### **(./stm32-pcb/wireless-control-unit/)** — *4-Layer RF Design*
 * **RF & Impedance** — Implemented a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
 * **Industrial Hardening** — Integrated dedicated **USB-C ESD protection** and optimized dual-crystal clocking (HSE/LSE) to ensure high-speed signal stability and timing precision.
 
-#### **[Precision Motion & Power Platform](./motion-pcb/)** — *Multi-Domain System Design*
+#### **(./stm32-pcb/precision-motion-platform/)** — *Multi-Domain System Design*
 * **Engineered Power Delivery** — Developed a high-efficiency power stage utilizing the **TPS63001** Buck-Boost converter to maintain stable +3.3V/5V rails from fluctuating battery inputs.
 * **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
