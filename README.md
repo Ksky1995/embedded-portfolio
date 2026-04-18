@@ -1,7 +1,8 @@
 # PAING HEIN KHANT
-**Electronic Engineer (BE Ec)** | **Service Engineer @ Concordia Public Co., Ltd**
 
-Technical lead for the repair and calibraion for high-precision Survey instruments. My work focuses on maintaining millimeter-level accuracy in industrial instrumentation and developing 4-layer embedded pcb design and edge Ai development
+*Electronics Engineer (BE Ec)*
+
+Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instrumentation and the design of high-density embedded PCBs (RF & Mixed-Signal). Currently developing Edge AI models to bridge industrial hardware with intelligent computer vision.
 
 ---
 
