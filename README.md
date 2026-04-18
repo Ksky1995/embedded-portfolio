@@ -17,7 +17,7 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 
 ---
 
-### 02 // INDUSTRIAL SERVICE & RECOVERY
+### INDUSTRIAL SERVICE & RECOVERY
 **[Hardware Diagnostics Portfolio](./hardware-diagnostics/)**
 
 * **OEM Factory Expertise** — Received on-site training from **Topcon Malaysia** experts; strictly following **SOPs** for the calibartion and board-level repair of Topcon & Sokkia systems.
@@ -25,13 +25,18 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 * **Operational Impact** — Consistently maintained a high **First-Time Fix Rate (FTFR)** through expert diagnostics and fault isolation.
 ---
 
-## HARDWARE DEVELOPMENT
-**[STM32 Wireless Control Unit](./stm32-pcb/)**
-*4-Layer RF PCB focusing on signal integrity.*
 
-* **RF Path**: 50Ω matched feedlines with integrated Balun/LPF for the **STM32WB55** SoC.
-* **Power**: PDN optimization to stabilize high-precision sensor data acquisition.
 
+## EMBEDDED SYSTEMS PCB ARCHITECTURE
+**Featured Engineering Portfolio**
+
+#### **[STM32 Wireless Control Unit](./stm32-pcb/)** — *4-Layer RF Design*
+* **RF & Impedance** — Architected a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
+* **Industrial Hardening** — Integrated dedicated **USB-C ESD protection** and optimized dual-crystal clocking (HSE/LSE) to ensure high-speed signal stability and timing precision.
+
+#### **[Precision Motion & Power Platform](./motion-pcb/)** — *Multi-Domain System Design*
+* **Engineered Power Delivery** — Developed a high-efficiency power stage utilizing the **TPS63001** Buck-Boost converter to maintain stable +3.3V/5V rails from fluctuating battery inputs.
+* **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
 
 ## CURRENT DIRECTION
