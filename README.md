@@ -11,19 +11,18 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 | Domain | Specialization | Tools |
 | :--- | :--- | :--- |
 | **PCB Design** | 4-Layer FR4 / 50Ω Matching / Differential Pairs | Altium / KiCad / LTspice |
-| **Service Engineering** | OEM Standards / RCA / Optical Calibration | Topcon / Sokkia / Collimators |
+| **Service Engineering** | OEM Standards / RCA / Optical Calibration | OEM Standard Collimators |
 | **Hardware Debug** | Board-Level Recovery / Signal Analysis / Rework | Oscilloscope / Multimeter / Soldering |
 | **Embedded AI** | Edge CV (EAR) / Computer Vision | ESP32-CAM / Python / C |
 
 ---
 
-02 // INDUSTRIAL SERVICE & RECOVERY
+### 02 // INDUSTRIAL SERVICE & RECOVERY
 **[Hardware Diagnostics Portfolio](./hardware-diagnostics/)**
-•	Specialized in the restoration of **Topcon & Sokkia** Total Stations, GNSS Receivers, and Digital Auto Levels.
-•	Independent board-level repair and fault isolation for proprietary systems; restoring functionality where standard manuals conclude.
-•	100% adherence to **OEM Manufacturing Standards** to ensure sub-millimeter precision and operational compliance.
 
-
+* **OEM Factory Expertise** — Received on-site training from **Topcon Malaysia** experts; strictly following **SOPs** for the restoration and board-level repair of Topcon & Sokkia systems.
+* **Max Precision Validation** — **Standard Collimator Calibrations** and rigorous inspections to guarantee sub-millimeter field accuracy.
+* **Operational Impact** — Consistently maintained a high **First-Time Fix Rate (FTFR)** through expert diagnostics and fault isolation.
 ---
 
 ## HARDWARE DEVELOPMENT
