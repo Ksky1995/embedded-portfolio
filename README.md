@@ -30,11 +30,11 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 ## EMBEDDED SYSTEMS PCB ARCHITECTURE
 **Featured Engineering Portfolio**
 
-#### **(/stm32-pcb/wireless-control-unit/)** — *4-Layer RF Design*
+#### **(tm32-pcb/wireless-control-unit/)** — *4-Layer RF Design*
 * **RF & Impedance** — Implemented a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
 * **Industrial Hardening** — Integrated dedicated **USB-C ESD protection** and optimized dual-crystal clocking (HSE/LSE) to ensure high-speed signal stability and timing precision.
 
-#### **(/stm32-pcb/precision-motion-platform/)** — *Multi-Domain System Design*
+#### **(stm32-pcb/precision-motion-platform/)** — *Multi-Domain System Design*
 * **Engineered Power Delivery** — Developed a high-efficiency power stage utilizing the **TPS63001** Buck-Boost converter to maintain stable +3.3V/5V rails from fluctuating battery inputs.
 * **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
