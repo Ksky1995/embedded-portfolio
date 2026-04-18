@@ -17,11 +17,11 @@ Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instr
 
 ---
 
-### INDUSTRIAL SERVICE & RECOVERY
+### SERVICE ENGINEER (TOPCON & SOKKIA)
 **[Hardware Diagnostics Portfolio](./hardware-diagnostics/)**
 
 * **OEM Factory Expertise** — Received on-site training from **Topcon Malaysia** experts; strictly following **SOPs** for the calibartion and board-level repair of Topcon & Sokkia systems.
-* **Max Precision Validation** — **Standard Collimator Calibrations** and rigorous inspections to guarantee sub-millimeter field accuracy.
+* **Precision Validation** — **Standard Collimator Calibrations** and rigorous inspections to guarantee sub-millimeter field accuracy.
 * **Operational Impact** — Consistently maintained a high **First-Time Fix Rate (FTFR)** through expert diagnostics and fault isolation.
 ---
 
