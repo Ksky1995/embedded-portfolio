@@ -6,10 +6,9 @@ Calibration | Repair | Diagnostics | Electronics + Optics Systems
 
 ## Summary
 
-Service engineer specializing in high-precision surveying instruments.
-Focused on system-level troubleshooting across optical, electronic, and mechanical domains.
-
-Worked with professional-grade equipment using manufacturer-level repair and calibration procedures.
+Service engineer with **hands-on experience at Topcon authorized dealer**, specializing in high-precision surveying instruments.  
+Experienced in system-level troubleshooting across optical, electronic, and mechanical domains.  
+Applies industry-standard repair and calibration practices to ensure measurement reliability and performance.
 
 ---
 
