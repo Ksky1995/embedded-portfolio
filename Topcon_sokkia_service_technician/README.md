@@ -10,13 +10,13 @@ Precision Instrument Service Engineer specializing in the calibration and repair
 
 ---
 
-Technical Core
-Laser & EDM Diagnostics: Analyzing laser frequency stability and performing precision APD (Avalanche Photodiode) alignment using proprietary EDM calibration apparatus.
+## Technical Core
+-Laser & EDM Diagnostics: Analyzing laser frequency stability and performing precision APD (Avalanche Photodiode) alignment  using proprietary EDM calibration apparatus.
 
-Electronic Troubleshooting: Advanced PCB-level diagnostics using high-precision multimeters to verify power rails and signal integrity at critical test points.
+- Electronic Troubleshooting: Advanced PCB-level diagnostics using high-precision multimeters to verify power rails and       signal integrity at critical test points.
 
 Optical Engineering: Infinite-focus collimator alignment, reticle centering, and magnetic compensator damping adjustment.
----
+
 
 ## Selected Engineering Case Studies
 
@@ -64,8 +64,11 @@ Unstable horizontal readings in Topcon AT-B series under high-vibration field co
 ---
 
 
-### Diagnostic Tools
-- Multi-channel Oscilloscopes (signal integrity analysis)  
-- Digital Multimeters (power rail verification)  
-- Factory service-mode diagnostic software  
+### Diagnostic Calibration
+- Optical Systems: High-precision Collimator systems for infinite-focus and reticle alignment.
 
+- Electronic Diagnostics: High-resolution Multimeters for multi-point PCB power rail and signal verification.
+
+- Proprietary EDM Tools: Specialized alignment apparatus for Avalanche Photodiode (APD) centering and laser frequency         optimization.
+
+- System Software: Factory-standard service interface for internal parameter tuning.
