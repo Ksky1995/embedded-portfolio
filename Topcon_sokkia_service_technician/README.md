@@ -74,16 +74,9 @@ Unstable horizontal readings in Topcon AT-B series under high-vibration field co
 
 ---
 
-## Technical Arsenal & Diagnostics
 
 ### Diagnostic Tools
 - Multi-channel Oscilloscopes (signal integrity analysis)  
 - Digital Multimeters (power rail verification)  
 - Factory service-mode diagnostic software  
 
-### Precision Equipment
-- Optical Collimator Systems (infinite focus alignment)  
-- Mechanical Micrometers  
-- Precision leveling bases  
-
-### Methodology
