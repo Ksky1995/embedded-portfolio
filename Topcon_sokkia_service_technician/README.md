@@ -14,7 +14,7 @@ Applies industry-standard repair and calibration practices to ensure measurement
 
 ## Core Capabilities
 
-* Total Station Repair (Topcon GM Series)
+* Total Station Repair (Topcon Series)
 * Automatic Level Calibration (AT-B Series)
 * EDM System Diagnostics (Laser / Receiver Chain)
 * PCB-Level Troubleshooting (MCPU, Sensor Units)
@@ -23,7 +23,7 @@ Applies industry-standard repair and calibration practices to ensure measurement
 
 ---
 ## Selected Work
-### GM-50 Total Station — Distance Measurement Failure
+### Total Station — Distance Measurement Failure
 
 **Problem**
 No distance output, angle measurement normal
