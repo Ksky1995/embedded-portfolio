@@ -110,14 +110,3 @@ PCB design completed (not yet fabricated or validated)
 * IMU data acquisition and processing
 
 ---
-
-## Key Takeaway
-
-This project demonstrates **intentional multi-layer PCB design**, with focus on:
-
-* Power integrity
-* Signal integrity
-* Thermal awareness
-* System-level hardware integration
-
-rather than basic circuit implementation.
