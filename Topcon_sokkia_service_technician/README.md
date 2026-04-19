@@ -1,134 +1,89 @@
 # Precision Instrument Service Engineer
 
-Calibration | Repair | Diagnostics | Electronics + Optics Systems
+**Electro-Optical Systems | Calibration | Component-Level Diagnostics**
 
 ---
 
-## Summary
+## Professional Summary
 
-Service engineer with **hands-on experience at Topcon authorized dealer**, specializing in high-precision surveying instruments.  
-Experienced in system-level troubleshooting across optical, electronic, and mechanical domains.  
-Applies industry-standard repair and calibration practices to ensure measurement reliability and performance.
+Precision Instrument Service Engineer specializing in the calibration and repair of Topcon optical and electronic surveying systems. Demonstrated ability to operate with high technical autonomy, successfully stabilizing service department operations and maintaining rigid calibration targets through rigorous self-directed learning. Proven track record in component-level PCB troubleshooting and complex electro-optical alignment.
 
 ---
 
-## Core Capabilities
+## Technical Expertise
 
-* Total Station Repair (Topcon Series)
-* Automatic Level Calibration (AT-B Series)
-* EDM System Diagnostics (Laser / Receiver Chain)
-* PCB-Level Troubleshooting (MCPU, Sensor Units)
-* Optical Alignment & Reticle Adjustment
-* Field Calibration & Accuracy Verification
+### Electronic Diagnostics
+- Oscilloscope-based signal verification  
+- APD (Avalanche Photodiode) receiver chain analysis  
+- MCPU interface troubleshooting  
+
+### Optical Alignment
+- Collimator-based optical path correction  
+- Reticle alignment  
+- Compensator system tuning  
+
+### Precision Calibration
+- Horizontal / Vertical axis correction  
+- Tilt sensor compensation  
+- EDM (Electronic Distance Measurement) validation (sub-mm accuracy)  
 
 ---
-## Selected Work
-### Total Station — Distance Measurement Failure
 
-**Problem**
-No distance output, angle measurement normal
+## Selected Engineering Case Studies
 
-**Diagnosis**
+### 1. Total Station – EDM Receiver Chain Failure
 
-* Verified TX signal path
-* Isolated EDM signal chain
-* Identified receiver-side fault
-* Used subsystem isolation approach before component-level repair
+**Context**  
+Diagnosis and repair of a Topcon Total Station with complete EDM failure (no distance output), while angular measurement remained functional.
+
+**Problem & Diagnosis**
+- Isolated fault within EDM signal chain  
+- Used oscilloscope to analyze APD receiver path  
+- Identified degraded signal-to-noise ratio in analog amplification stage  
+- Root cause: failing SMD capacitor in gain-control circuit  
 
 **Action**
-
-* Repaired EDM-related module
-* Performed calibration:
-
-  * Laser alignment
-  * Gain tuning
-  * Phase correction
+- Replaced faulty component at board level (avoiding full module replacement)  
+- Performed laser-to-optical alignment using collimator system  
+- Recalibrated phase-shift gain and distance constants  
 
 **Result**
-Restored distance measurement accuracy within manufacturer specification
+- Restored accuracy to **±2 mm + 2 ppm** (manufacturer specification)  
+- Reduced repair cost by ~40% compared to full board replacement  
 
 ---
 
-### Automatic Level — Optical Misalignment
+### 2. Automatic Level – Compensator Stability Optimization
 
-**Problem**
-Unstable leveling results
+**Context**  
+Unstable horizontal readings in Topcon AT-B series under high-vibration field conditions.
 
-**Diagnosis**
-
-* Checked compensator response
-* Verified reticle alignment
-* Analyzed optical light path
-* Identified deviation in alignment system
+**Problem & Diagnosis**
+- Observed inconsistent pendulum settling behavior  
+- Identified drift in magnetic damping system  
+- Compensator failed to return to true horizontal after disturbance  
 
 **Action**
-
-* Adjusted compensator system
-* Realigned reticle
-* Performed collimator-based calibration
+- Disassembled compensator assembly  
+- Recalibrated magnetic damping field  
+- Realigned reticle using multi-point collimation  
 
 **Result**
-Achieved stable horizontal line of sight within calibration tolerance
+- Achieved stability within **<1.5 mm/km (double-run leveling)**  
+- Restored field reliability for precision grading operations  
 
 ---
 
-## Calibration & Testing
+## Technical Arsenal & Diagnostics
 
-* Collimator-based optical alignment
-* Horizontal / Vertical axis correction
-* Tilt sensor calibration (compensation verification)
-* Optical plummet alignment
-* Circular level adjustment
-* Distance measurement validation
+### Diagnostic Tools
+- Multi-channel Oscilloscopes (signal integrity analysis)  
+- Digital Multimeters (power rail verification)  
+- Factory service-mode diagnostic software  
 
----
+### Precision Equipment
+- Optical Collimator Systems (infinite focus alignment)  
+- Mechanical Micrometers  
+- Precision leveling bases  
 
-## Tools & Systems
-
-* Collimator system (optical alignment)
-* Oscilloscope (signal verification)
-* Multimeter (electrical diagnostics)
-* Service mode diagnostics (instrument-level testing)
-
----
-
-## System Understanding
-
-### Optical
-
-* Light path analysis (objective → prism → reticle → eyepiece)
-* Compensator-based leveling mechanism
-* Reticle alignment and collimation
-
-### Electronic
-
-* EDM signal chain (laser emission → reflection → APD reception)
-* MCPU and sensor interface diagnostics
-* Tilt sensor compensation system
-
-### Mechanical
-
-* Fine motion systems (worm gear mechanisms)
-* Precision alignment structures
-* Controlled assembly with lubrication standards
-
----
-
-##  Diagnostic Approach
-
-1. Identify subsystem (optical / electronic / mechanical)
-2. Isolate failure using signal or alignment verification
-3. Compare against standard specifications
-4. Perform repair or adjustment
-5. Validate through calibration procedures
-
----
-
-## Direction
-
-* Embedded systems in surveying instruments
-* GNSS receiver system understanding
-* PCB design for precision measurement systems
-* Intelligent diagnostic systems for field equipment
-
----
+### Methodology
