@@ -10,23 +10,12 @@ Precision Instrument Service Engineer specializing in the calibration and repair
 
 ---
 
-## Technical Expertise
+Technical Core
+Laser & EDM Diagnostics: Analyzing laser frequency stability and performing precision APD (Avalanche Photodiode) alignment using proprietary EDM calibration apparatus.
 
-### Electronic Diagnostics
-- Oscilloscope-based signal verification  
-- APD (Avalanche Photodiode) receiver chain analysis  
-- MCPU interface troubleshooting  
+Electronic Troubleshooting: Advanced PCB-level diagnostics using high-precision multimeters to verify power rails and signal integrity at critical test points.
 
-### Optical Alignment
-- Collimator-based optical path correction  
-- Reticle alignment  
-- Compensator system tuning  
-
-### Precision Calibration
-- Horizontal / Vertical axis correction  
-- Tilt sensor compensation  
-- EDM (Electronic Distance Measurement) validation (sub-mm accuracy)  
-
+Optical Engineering: Infinite-focus collimator alignment, reticle centering, and magnetic compensator damping adjustment.
 ---
 
 ## Selected Engineering Case Studies
