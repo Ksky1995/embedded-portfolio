@@ -11,6 +11,7 @@ This project is a **pre-fabrication embedded hardware platform** designed for ro
 The core engineering objective was to design a manufacturable board that maintains strict signal integrity for sensitive sensor data while safely handling high-frequency switching noise from the integrated power stage.
 
 ![Figure 1: 3D Visualization of the Integrated Sensor & Power Management PCBA](STM32_PCBA_3D_Top_Assembly.png)
+
 *Figure 1: 3D Assembly highlighting component density and physical layout.*
 
 ---
@@ -30,6 +31,7 @@ The architecture is divided into clear logical domains to isolate high-current p
 *Figure 2: Logic and sensor domain schematics.*
 
 ![Figure 3: BMS and Buck-Boost Power Stage](BQ25303_BMS_Lithium_Charger.png)
+
 *Figure 3: Power distribution and battery management schematics.*
 
 ---
@@ -44,9 +46,11 @@ A **4-layer stackup** was implemented to strictly control impedance, manage retu
 * **Layer 4 (Bottom):** Low-speed GPIO signals, escape routing, and test points.
 
 ![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
+
 *Figure 4: Top layer layout demonstrating GND copper pours for noise reduction and thermal mass.*
 
 ![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
+
 *Figure 5: Bottom layer demonstrating clean escape routing and via placement.*
 
 ---
