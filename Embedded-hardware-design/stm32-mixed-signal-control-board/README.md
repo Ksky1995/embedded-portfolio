@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 System Overview
+## System Overview
 
 This project is a **pre-fabrication embedded hardware platform** designed for robust motion control and sensing applications. It integrates a complete Lithium-ion power management system, an STM32 Cortex-M4 microcontroller, and a 6-axis IMU onto a compact, highly optimized 4-layer PCB. 
 
@@ -15,7 +15,7 @@ The core engineering objective was to design a manufacturable board that maintai
 
 ---
 
-## 🧠 System Architecture & Component Selection
+## System Architecture & Component Selection
 
 The architecture is divided into clear logical domains to isolate high-current power paths from sensitive digital communications.
 
@@ -34,7 +34,7 @@ The architecture is divided into clear logical domains to isolate high-current p
 
 ---
 
-## 🏗️ Stackup & PCB Layout Strategy
+## Stackup & PCB Layout Strategy
 
 A **4-layer stackup** was implemented to strictly control impedance, manage return currents, and shield sensitive communication lines. 
 
@@ -51,7 +51,7 @@ A **4-layer stackup** was implemented to strictly control impedance, manage retu
 
 ---
 
-## ⚙️ Engineering Rigor & Problem Solving
+## Engineering Rigor & Problem Solving
 
 During the layout phase, several system-level challenges were actively mitigated:
 
@@ -61,7 +61,7 @@ During the layout phase, several system-level challenges were actively mitigated
 
 ---
 
-## 📅 Project Status & Next Steps
+## Project Status & Next Steps
 
 * **Current Status:** Schematic and PCB Layout complete. Ready for manufacturing.
 * **Phase 2:** Bare-board fabrication and PCBA bring-up.
