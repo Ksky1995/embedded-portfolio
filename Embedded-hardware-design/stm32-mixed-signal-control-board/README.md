@@ -31,6 +31,7 @@ The design is partitioned into functional domains to reduce interference between
 *MCU and IMU interface showing short I2C routing and local decoupling.*
 
 ![Figure 3: BMS and Buck-Boost Power Stage](BQ25303_BMS_Lithium_Charger.png)
+
 *Power subsystem integrating Li-ion charging and regulation.*
 
 ---
@@ -47,9 +48,11 @@ A 4-layer stackup is used to manage return paths and reduce noise coupling:
 ### Layout Overview
 
 ![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
+
 *Top layer showing separation between power stage and control region.*
 
 ![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
+
 *Bottom layer used for signal escape routing and test access.*
 
 ---
