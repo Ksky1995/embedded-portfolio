@@ -11,6 +11,7 @@ This project is a **pre-fabrication embedded hardware design** integrating power
 The primary design focus is maintaining **signal integrity for low-level sensor communication** while managing **switching noise from the power stage**.
 
 ![Figure 1: 3D Visualization of the Integrated Sensor & Power Management PCBA](STM32_PCBA_3D_Top_Assembly.png)
+
 *3D view used to verify component placement, connector accessibility, and overall board integration.*
 
 ---
@@ -25,12 +26,11 @@ The design is partitioned into functional domains to reduce interference between
 
 ### Schematic Overview
 
-![Control and Sensor Schematic](images/STM32F4_IMU_Control_Schematic.png)
+![Figure 2: STM32F4 & IMU Control Schematic](STM32F4_IMU_Control_Schematic.png)
 
 *MCU and IMU interface showing short I2C routing and local decoupling.*
 
-![Power Stage Schematic](images/BQ25303_BMS_Lithium_Charger.png)
-
+![Figure 3: BMS and Buck-Boost Power Stage](BQ25303_BMS_Lithium_Charger.png)
 *Power subsystem integrating Li-ion charging and regulation.*
 
 ---
@@ -46,17 +46,15 @@ A 4-layer stackup is used to manage return paths and reduce noise coupling:
 
 ### Layout Overview
 
-![Top Layer Layout](images/Four_layers_stack.png)
-
+![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
 *Top layer showing separation between power stage and control region.*
 
-![Bottom Layer Routing](images/PCB_Layout_Bottom_Layer_Signal_Paths.png)
-
+![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
 *Bottom layer used for signal escape routing and test access.*
 
 ---
 
-## ⚙️ Key Design Considerations
+## Design Considerations
 
 ### Power Integrity
 
@@ -88,7 +86,7 @@ A 4-layer stackup is used to manage return paths and reduce noise coupling:
 
 ---
 
-## 🧪 Design Review Notes
+## Design Review Notes
 
 - Identified critical switching current loops and minimized their area  
 - Maintained separation between noisy and sensitive domains  
