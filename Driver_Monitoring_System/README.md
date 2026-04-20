@@ -23,6 +23,7 @@ This implementation represents a **prototype evaluation stage**, not a deployed 
 - **Future Interface Design:** UART / Serial communication prepared conceptually  
 
 ---
+![Uploading Screenshot 2026-04-20 141951.png…]()
 
 ## System Processing Pipeline
 
