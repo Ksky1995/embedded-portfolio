@@ -1,112 +1,69 @@
 # STM32 Motion Control Hardware Platform [Pre-Fabrication]
 
-4-Layer PCB | STM32F411 + Power Management + MPU-6050 | Altium Designer
+**Technologies:** Altium Designer | 4-Layer PCB Design | STM32F4 | Embedded Systems | Power Management (BMS) | Signal Integrity
 
 ---
 
-## Overview
+## 🚀 System Overview
 
-This project presents a **pre-fabrication embedded hardware platform** designed for motion control and sensing applications.
+This project is a **pre-fabrication embedded hardware platform** designed for robust motion control and sensing applications. It integrates a complete Lithium-ion power management system, an STM32 Cortex-M4 microcontroller, and a 6-axis IMU onto a compact, highly optimized 4-layer PCB. 
 
-The system integrates **Li-ion power management, an STM32 microcontroller, and an IMU sensor** into a compact 4-layer PCB. The primary design challenge was maintaining signal integrity while handling high-frequency switching noise from the power stage.
+The core engineering objective was to design a manufacturable board that maintains strict signal integrity for sensitive sensor data while safely handling high-frequency switching noise from the integrated power stage.
 
----
-
-## System Architecture & Component Selection
-
-**MCU:** STM32F411CEU6 (ARM Cortex-M4)
-
-* Selected for sufficient processing capability for future control and sensor-processing tasks
-* Provides flexible peripheral interfaces (I2C, SPI, UART)
-
-**Power Stage:** TPS63001 Buck-Boost Converter
-
-* Maintains a stable system rail under varying battery conditions
-* Chosen for high efficiency and wide input range
-
-**Battery Charging / Power Management:** BQ25306
-
-* Integrated Li-ion charging with thermal regulation (NTC support)
-* Designed for USB-powered charging scenarios
-
-**Sensor:** MPU-6050 (6-axis IMU)
-
-* Provides motion and orientation data
-* Routed with minimized trace length to reduce I2C bus noise sensitivity
+![Figure 1: 3D Visualization of the Integrated Sensor & Power Management PCBA](STM32_PCBA_3D_Top_Assembly.png)
+*Figure 1: 3D Assembly highlighting component density, connector placement, and physical layout strategy.*
 
 ---
 
-## Stackup & PCB Layout Strategy
+## 🧠 System Architecture & Component Selection
 
-The design uses a **4-layer stackup** to improve signal and power integrity:
+The architecture is divided into clear logical domains to isolate high-current power paths from sensitive digital communications.
 
-* **Top Layer:** High-speed routing, critical component placement
-* **Inner Layer 1 (GND):** Continuous ground plane for low-impedance return paths
-* **Inner Layer 2 (Power):** Dedicated power distribution (3.3V / system rails)
-* **Bottom Layer:** Low-speed signals, GPIO routing, and test points
+* **MCU (STM32F411CEU6):** ARM Cortex-M4 selected for DSP capabilities required in future motion-control algorithms. Features flexible peripheral routing (I2C, SPI, UART).
+* **6-Axis Sensor (MPU-6050):** IMU placed with minimized trace lengths to the MCU to reduce I2C bus capacitance and noise susceptibility.
+* **Power Regulation (TPS63001):** High-efficiency Buck-Boost converter chosen to maintain a rock-solid 3.3V system rail across the entire discharge curve of a Li-ion cell.
+* **Battery Management (BQ25306):** Integrated charging IC featuring thermal regulation (NTC support) for safe, reliable USB-powered charging.
 
-### Design Intent
+### Schematic Design
 
-* Ensure clean return paths for switching and digital signals
-* Reduce EMI through tight current loop control
-* Provide stable power delivery to MCU and sensor subsystems
+![Figure 2: STM32F4 & IMU Control Schematic](STM32F4_IMU_Control_Schematic.png)
+*Figure 2: Logic and sensor domain schematics.*
 
----
-
-## Engineering Challenges & Design Decisions
-
-### Thermal Management (Power Path)
-
-Initial estimates indicated significant heat dissipation in the power switching path.
-To address this:
-
-* Expanded copper area for heat spreading
-* Added thermal vias to couple heat into internal planes
+![Figure 3: BMS and Buck-Boost Power Stage](BQ25303_BMS_Lithium_Charger.png)
+*Figure 3: Power distribution and Lithium-ion battery management schematics.*
 
 ---
 
-### EMI Mitigation
+## 🏗️ Stackup & PCB Layout Strategy
 
-The switching regulator introduced potential high-frequency noise risks.
+A **4-layer stackup** was implemented to strictly control impedance, manage return currents, and shield sensitive communication lines. 
 
-Mitigation strategies:
+* **Layer 1 (Top):** High-speed routing, high-density component placement, and localized copper pours for thermal dissipation.
+* **Layer 2 (Inner GND):** Continuous, unbroken ground plane to provide lowest-impedance return paths and contain EMI.
+* **Layer 3 (Inner Power):** Dedicated power distribution for the 3.3V system rail.
+* **Layer 4 (Bottom):** Low-speed GPIO signals, escape routing, and test points.
 
-* Minimized high di/dt loop area around the regulator and inductor
-* Physically separated switching nodes from IMU signal routing
-* Maintained solid ground reference under sensitive traces
+![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
+*Figure 4: Top layer layout demonstrating solid GND copper pours for noise reduction and thermal mass.*
 
----
-
-### Signal Integrity (I2C / Sensor)
-
-* Short trace routing for SDA/SCL lines
-* Continuous ground reference to reduce impedance
-* Avoided routing near switching nodes
+![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
+*Figure 5: Bottom layer demonstrating clean escape routing and via placement.*
 
 ---
 
-## Design Review Notes
+## ⚙️ Engineering Rigor & Problem Solving
 
-* Critical current loops identified and minimized
-* Power and signal domains carefully separated
-* Potential risk areas:
+During the layout phase, several system-level challenges were actively mitigated:
 
-  * Noise coupling from switching stage into sensor lines
-  * Power transient behavior under dynamic load
-
----
-
-## Project Status
-
-PCB design completed (not yet fabricated or validated)
+* **EMI Mitigation:** The switching regulator introduces high-frequency noise risks. This was mitigated by minimizing the high *di/dt* loop area around the TPS63001 and inductor, and physically isolating the switching nodes away from the IMU's I2C lines.
+* **Signal Integrity:** Maintained a continuous ground reference under all sensitive traces. Shortened I2C routing to minimize parasitic capacitance. 
+* **Thermal Management:** The power path required careful thermal consideration. Expanded top-layer copper areas were utilized for heat spreading, coupled with strategically placed thermal vias to sink heat into the internal ground plane.
 
 ---
 
-## Future Work
+## 📅 Project Status & Next Steps
 
-* Fabrication and bring-up
-* Power rail validation (ripple, load response)
-* STM32 firmware development
-* IMU data acquisition and processing
-
----
+* **Current Status:** Schematic and PCB Layout complete. Ready for manufacturing.
+* **Phase 2:** Bare-board fabrication and PCBA bring-up.
+* **Phase 3:** Power rail validation (measuring voltage ripple and dynamic load response under oscilloscope).
+* **Phase 4:** STM32 firmware development for IMU data acquisition and sensor fusion.
