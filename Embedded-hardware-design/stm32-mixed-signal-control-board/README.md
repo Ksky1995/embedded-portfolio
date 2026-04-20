@@ -10,8 +10,7 @@ This project is a **pre-fabrication embedded hardware design** integrating power
 
 The primary design focus is maintaining **signal integrity for low-level sensor communication** while managing **switching noise from the power stage**.
 
-![3D PCB Assembly](images/STM32_PCBA_3D_Top_Assembly.png)
-
+![Figure 1: 3D Visualization of the Integrated Sensor & Power Management PCBA](STM32_PCBA_3D_Top_Assembly.png)
 *3D view used to verify component placement, connector accessibility, and overall board integration.*
 
 ---
