@@ -11,6 +11,10 @@ The objective of this work is to validate the **feasibility of temporal filterin
 
 This implementation represents a **prototype evaluation stage**, not a deployed or production system.
 
+## 🖥️ System Demonstration
+![DMS Telemetry Validation](assets/Screenshot_2026-04-20.png)
+*Figure 1: Real-time telemetry showing EAR/MAR tracking, temporal signal graph (top-left), and heuristic state classification (Drowsy).*
+
 ---
 
 ## Tech Stack & Environment
