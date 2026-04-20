@@ -1,3 +1,5 @@
+#nstall dependencies: `pip install opencv-python mediapipe numpy`
+
 import cv2
 import mediapipe as mp
 import numpy as np
