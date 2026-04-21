@@ -1,74 +1,109 @@
-# Precision Instrument Service Engineer
+# Precision Instrument Service Technician
 
-**Electro-Optical Systems | Calibration | Component-Level Diagnostics**
+![Units](https://img.shields.io/badge/Units%20Serviced-200%2B-success)
+![Systems](https://img.shields.io/badge/Systems-Topcon%20Total%20Station%20%26%20Auto%20Level-blue)
+![Work](https://img.shields.io/badge/Work-Calibration%20%7C%20Repair-orange)
 
 ---
 
-## Professional Summary
+## Professional Overview
 
-Precision Instrument Service Engineer specializing in the calibration and repair of Topcon optical and electronic surveying systems. Demonstrated ability to operate with high technical autonomy, successfully stabilizing service department operations and maintaining rigid calibration targets through rigorous self-directed learning. Proven track record in component-level PCB troubleshooting and complex electro-optical alignment.
+Worked in an authorized service environment repairing and calibrating Topcon total stations and automatic levels.
+
+Over ~1 year:
+- Serviced 200+ units  
+- Handled both electronic faults and optical/mechanical calibration  
+- Followed manufacturer procedures using proprietary tools  
+
+Most work focused on bringing instruments back to field-ready condition without replacing full assemblies.
 
 ---
 
 ## Technical Core
--Laser & EDM Diagnostics: Analyzing laser frequency stability and performing precision APD (Avalanche Photodiode) alignment  using proprietary EDM calibration apparatus.
 
-- Electronic Troubleshooting: Advanced PCB-level diagnostics using high-precision multimeters to verify power rails and       signal integrity at critical test points.
+**Calibration & Alignment**
+- Optical collimation and line-of-sight alignment  
+- Reticle centering  
+- Automatic level compensator adjustment  
 
-Optical Engineering: Infinite-focus collimator alignment, reticle centering, and magnetic compensator damping adjustment.
+**Repair & Diagnostics**
+- PCB-level troubleshooting (power and signal faults)  
+- Vertical encoder servicing  
+- Step-by-step fault isolation based on service procedures  
 
-
-## Selected Engineering Case Studies
-
-### 1. Total Station – EDM Receiver Chain Failure
-
-**Context**  
-Diagnosis and repair of a Topcon Total Station with complete EDM failure (no distance output), while angular measurement remained functional.
-
-**Problem & Diagnosis**
-- Isolated fault within EDM signal chain  
-- Used oscilloscope to analyze APD receiver path  
-- Identified degraded signal-to-noise ratio in analog amplification stage  
-- Root cause: failing SMD capacitor in gain-control circuit  
-
-**Action**
-- Replaced faulty component at board level (avoiding full module replacement)  
-- Performed laser-to-optical alignment using collimator system  
-- Recalibrated phase-shift gain and distance constants  
-
-**Result**
-- Restored accuracy to **±2 mm + 2 ppm** (manufacturer specification)  
-- Reduced repair cost by ~40% compared to full board replacement  
+**Tools**
+- Topcon service tools and calibration fixtures *(details restricted)*  
+- Multimeters  
+- Manufacturer software interface  
 
 ---
 
-### 2. Automatic Level – Compensator Stability Optimization
-
-**Context**  
-Unstable horizontal readings in Topcon AT-B series under high-vibration field conditions.
-
-**Problem & Diagnosis**
-- Observed inconsistent pendulum settling behavior  
-- Identified drift in magnetic damping system  
-- Compensator failed to return to true horizontal after disturbance  
-
-**Action**
-- Disassembled compensator assembly  
-- Recalibrated magnetic damping field  
-- Realigned reticle using multi-point collimation  
-
-**Result**
-- Achieved stability within **<1.5 mm/km (double-run leveling)**  
-- Restored field reliability for precision grading operations  
+## Selected Work
 
 ---
 
+### Optical Calibration Setup (Total Station)
 
-### Diagnostic Calibration
-- Optical Systems: High-precision Collimator systems for infinite-focus and reticle alignment.
+<p align="center">
+  <img src="YOUR_IMAGE_1_PATH" width="520"/>
+</p>
 
-- Electronic Diagnostics: High-resolution Multimeters for multi-point PCB power rail and signal verification.
+- Set up collimator-based alignment  
+- Verified instrument axis and line-of-sight  
+- Adjusted until measurements matched calibration standards  
 
-- Proprietary EDM Tools: Specialized alignment apparatus for Avalanche Photodiode (APD) centering and laser frequency         optimization.
+Notes:  
+This is standard pre/post calibration work before returning a unit.
 
-- System Software: Factory-standard service interface for internal parameter tuning.
+---
+
+### Vertical Encoder Repair (Total Station)
+
+<p align="center">
+  <img src="YOUR_IMAGE_4_PATH" width="520"/>
+</p>
+
+- Disassembled unit to access vertical encoder  
+- Identified and corrected fault affecting angle readings  
+- Reassembled and verified against service references  
+
+Notes:  
+Focused on restoring encoder function rather than replacing the full module.
+
+---
+
+### Automatic Level Calibration
+
+<p align="center">
+  <img src="YOUR_IMAGE_5_PATH" width="520"/>
+</p>
+
+- Opened unit to access compensator system  
+- Adjusted damping and alignment  
+- Verified stability and leveling consistency  
+
+Notes:  
+Typical issue involved unstable or slow-settling compensators.
+
+---
+
+## Diagnostic & Calibration Work
+
+- Optical alignment using collimator systems  
+- Calibration checks for total stations and levels  
+- Multi-point verification before closing jobs  
+
+---
+
+## Work Environment Notes
+
+- All work done under manufacturer-authorized workflows  
+- Relied on dedicated service tools (not general lab equipment)  
+- Some procedures and tools are not publicly documented  
+
+---
+
+## Contact
+
+- GitHub: *your link*  
+- LinkedIn: *your link*  
