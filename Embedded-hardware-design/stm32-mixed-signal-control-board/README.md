@@ -47,11 +47,15 @@ A 4-layer stackup is used to manage return paths and reduce noise coupling:
 - **Bottom Layer:** Low-speed routing and signal breakout  
 
 ### Layout Overview
-
+<p align="center">
+  <img src="./Four_layers_stack.png" width="500"/>
+</p>
 ![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
 
 *Top layer showing separation between power stage and control region.*
-
+<p align="center">
+  <img src="./PCB_Layout_Bottom_Layer_Signal_Paths.png" width="500"/>
+</p>
 ![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
 
 *Bottom layer used for signal escape routing and test access.*
