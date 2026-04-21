@@ -9,6 +9,9 @@
 This project is a **pre-fabrication embedded hardware design** integrating power management, microcontroller, and motion sensing into a compact 4-layer PCB.
 
 The primary design focus is maintaining **signal integrity for low-level sensor communication** while managing **switching noise from the power stage**.
+<p align="center">
+  <img src="./STM32_PCBA_3D_Top_Assembly.png" width="500"/>
+</p>
 
 ![Figure 1: 3D Visualization of the Integrated Sensor & Power Management 
 <p align="center">
