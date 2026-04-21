@@ -1,61 +1,91 @@
-# PAING HEIN KHANT
+# Embedded Systems & Diagnostics
 
-*Electronics Engineer*
-
-Electronics Engineer with 1+ years of technical service in Topcon & Sokkia instrumentation and the design of high-density embedded PCBs (RF & Mixed-Signal). Currently developing Edge AI models to bridge industrial hardware with intelligent computer vision.
+Focused on embedded systems, mixed-signal hardware, and field-level diagnostics and calibration.
 
 ---
 
-## TECHNICAL CORE
+## Core Skills / Tools
 
-| Domain | Specialization | Tools |
-| :--- | :--- | :--- |
-| **PCB Design** | 4-Layer FR4 / 50Ω Matching / Differential Pairs | Altium / KiCad / LTspice |
-| **Service Engineering** | OEM Standards / RCA / Optical Calibration | OEM Standard Collimators |
-| **Hardware Debug** | Board-Level Recovery / Signal Analysis / Rework | Oscilloscope / Multimeter / Soldering |
-| **Embedded AI** | Edge CV (EAR) / Computer Vision | ESP32-CAM / Python / C |
+**Embedded / Hardware**
+- STM32 (F4 series)
+- Mixed-signal PCB design (4-layer)
+- RF layout (Sub-GHz, 50Ω matching)
+- Power systems (buck-boost, LDO, battery management)
+- Sensor integration (IMU, camera)
+
+**Software**
+- Python (real-time processing)
+- OpenCV
+- MediaPipe / Dlib
+- Signal processing (temporal filtering, heuristic models)
+
+**Tools**
+- Altium Designer, KiCad
+- Multimeter
+- Oscilloscope (planned validation)
+- VNA / Spectrum Analyzer (planned RF validation)
+- Manufacturer service tools (Topcon systems)
 
 ---
 
-### SERVICE ENGINEER (TOPCON & SOKKIA)
-[Topcon & Sokkia Survey Instruments Repair and Calibration](./topcon-sokkia-service-technician/)
+### Precision Instrument Service Technician
 
-* **OEM Factory Expertise** — Received on-site training from **Topcon Malaysia** experts; strictly following **SOPs** for the calibartion and board-level repair of Topcon & Sokkia systems.
-* **Precision Validation** — **Standard Collimator Calibrations** and rigorous inspections to guarantee sub-millimeter field accuracy.
-* **Operational Impact** — Consistently maintained a high **First-Time Fix Rate (FTFR)** through expert diagnostics and fault isolation.
+Repair and calibration of Topcon total stations and automatic levels.
+
+![Optical Calibration](Stand_Collimator.png)
+
+- Serviced 200+ units in authorized environment  
+- Performed optical alignment (collimation, reticle, compensator)  
+- Diagnosed PCB-level faults (power and signal issues)  
+- Repaired vertical encoders and mechanical assemblies  
+- Verified calibration using manufacturer procedures and fixtures  
+
+---
+## Projects
+
+### STM32 Wireless RF Communication Platform (Pre-Fabrication)
+
+4-layer PCB designed to evaluate RF performance under mixed digital noise conditions.
+
+![RF Board](./3d_visualization.png)
+
+- Designed RF path with 50Ω matching and edge-mounted connector  
+- Routed compact mixed-signal layout (RF, USB, power sharing same board)  
+- Maintained continuous ground plane with via stitching  
+- Implemented discrete RF matching network  
+- Prepared for VNA, spectrum, and range testing post-fabrication  
+
 ---
 
+### STM32 Mixed-Signal Control Board (Pre-Fabrication)
 
+Embedded system combining MCU, IMU sensor, and buck-boost power stage.
 
-## EMBEDDED SYSTEMS PCB ARCHITECTURE
-**Featured Engineering Portfolio**
+![Mixed Signal Board](STM32_PCBA_3D_Top_Assembly.png)
 
-#### **[STM32 Wireless Control Unit](./stm32-pcb/wireless-control-unit/)**— *4-Layer RF Design*
-* **RF & Impedance** — Implemented a $50\Omega$ matched 2.4GHz path with a discrete Pi-network and Low Pass Filter (LPF) for the **STM32WB55** dual-core SoC.
-* **Industrial Hardening** — Integrated dedicated **USB-C ESD protection** and optimized dual-crystal clocking (HSE/LSE) to ensure high-speed signal stability and timing precision.
+- Designed 4-layer PCB with dedicated ground and power planes  
+- Placed switching regulator away from sensor/control domain  
+- Routed short I2C lines over continuous ground reference  
+- Minimized high-current loops in power stage layout  
+- Prepared validation for ripple, I2C integrity, and sensor stability  
 
-#### **[Precision Motion & Power Platform](./stm32-pcb/precision-motion-platform/)** — *Multi-Domain System Design*
-* **Engineered Power Delivery** — Developed a high-efficiency power stage utilizing the **TPS63001** Buck-Boost converter to maintain stable +3.3V/5V rails from fluctuating battery inputs.
-* **Synthesized Sensor Fusion** — Integrated an **MPU-6050** IMU with an **STM32F4** core, implementing mixed-signal layout techniques to preserve high-fidelity motion data against switching noise.
 ---
+### Driver Monitoring System (DMS) — Prototype
 
-## EDGE AI & IoT INTEGRATION
-**[Intelligence Hub](./ai-learning/)** — *Computer Vision & IoT Research*
+Real-time webcam-based system for fatigue detection using facial signals.
 
-#### **Driver Drowsiness System (PoC)**
-* **Inference Logic** — Developed a real-time **Eye Aspect Ratio (EAR)** algorithm utilizing **Mediapipe** and **OpenCV** to monitor fatigue thresholds via local vision stream.
-* **Algorithm Validation** — Successfully prototyped facial landmark detection to calculate drowsiness metrics with high temporal resolution on a local environment.
+![DMS Telemetry](assets/Screenshot_2026-04-20.png)
 
-#### **ESP32-CAM IoT Implementation**
-* **Remote Capture System** — Engineered a **Telegram Bot API** interface allowing remote image acquisition via secure `/photo` command triggers.
-* **Firmware Optimization** — Implemented Wi-Fi stack management on the ESP32 to handle asynchronous HTTP requests and JPEG stream buffering.
----
+- Built real-time pipeline using OpenCV and MediaPipe  
+- Extracted EAR (eye), MAR (mouth), and head pose signals  
+- Applied temporal filtering to stabilize noisy signals  
+- Implemented heuristic fusion model for fatigue scoring  
+- Tested under different lighting and motion conditions  
 
-## // ENGINEERING GALLERY
-<p align="center">
-  <img src="./assets/pcb-3d-render.png" width="45%" alt="4-Layer RF Layout" />
-  <img src="./assets/service-bench.jpg" width="45%" alt="Topcon Calibration" />
-</p>
-<p align="center">
-  <i>Left: 3D Visualization of the STM32 Wireless Control Unit. Right: Precision optical calibration of Topcon Total Station.</i>
-</p>
+## Work Approach
+
+- Start from system-level behavior, not assumptions  
+- Trace faults through power, signal, and physical layout paths  
+- Use measurement and verification instead of guesswork  
+- Keep designs simple where possible, visible where not  
+- Focus on restoring function before replacing components  
