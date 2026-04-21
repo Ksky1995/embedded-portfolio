@@ -1,64 +1,59 @@
 # STM32 Mixed-Signal Control Board [Pre-Fabrication]
 
-**Altium Designer | 4-Layer PCB | STM32F411 | Power Management | Signal Integrity**
+**Altium Designer | 4-Layer PCB | STM32F411 | Power + Sensor Integrity | Battery System**
 
 ---
 
 ## System Overview
 
-This project is a **pre-fabrication embedded hardware design** integrating power management, microcontroller, and motion sensing into a compact 4-layer PCB.
+This project is a **pre-fabrication mixed-signal embedded system** integrating motion sensing, battery management, and regulated power delivery into a compact 4-layer PCB.
 
-The primary design focus is maintaining **signal integrity for low-level sensor communication** while managing **switching noise from the power stage**.
+The core design challenge is preserving **low-noise sensor communication (IMU)** while operating alongside a **switching power stage and dynamic battery conditions**.
+
 <p align="center">
   <img src="./STM32_PCBA_3D_Top_Assembly.png" width="500"/>
 </p>
 
-<p align="center"><em>*3D view used to verify component placement, connector accessibility, and overall board integration.*
+<p align="center"><em>3D assembly used to validate domain separation, power component placement, and connector accessibility.</em></p>
 
 ---
 
 ## System Architecture
 
-The design is partitioned into functional domains to reduce interference between subsystems:
+The system is partitioned into functional domains to control noise coupling and ensure stable operation:
 
-- **Control Domain:** STM32F411CEU6 (Cortex-M4)  
-- **Sensor Domain:** MPU-6050 (I2C interface)  
-- **Power Domain:** Buck-boost regulation + Li-ion charging  
+- **Control Domain:** STM32F411CEU6 (Cortex-M4, high-performance control)  
+- **Sensor Domain:** MPU-6050 (I2C-based IMU for motion sensing)  
+- **Power Domain:** Buck-boost regulation + Li-ion charging (BQ25303)  
 
-### Schematic Overview
+### Key Design Decisions
 
-![Figure 2: STM32F4 & IMU Control Schematic](STM32F4_IMU_Control_Schematic.png)
-
-*MCU and IMU interface showing short I2C routing and local decoupling.*
-
-![Figure 3: BMS and Buck-Boost Power Stage](BQ25303_BMS_Lithium_Charger.png)
-
-*Power subsystem integrating Li-ion charging and regulation.*
+- **Buck-boost topology** selected to maintain stable 3.3V output across full battery discharge range  
+- **External IMU (I2C)** used instead of integrated solutions to allow flexible placement and noise isolation  
+- **4-layer PCB** chosen to ensure controlled return paths and reduce ground impedance  
 
 ---
 
-## PCB Stackup & Layout 
+## PCB Stackup & Layout
 
-A 4-layer stackup is used to manage return paths and reduce noise coupling:
+A 4-layer stackup is used to manage return currents and isolate noisy subsystems:
 
 - **Top Layer:** Critical routing and component placement  
-- **Inner Layer 1:** Continuous ground plane  
-- **Inner Layer 2:** 3.3V power distribution  
-- **Bottom Layer:** Low-speed routing and signal breakout  
+- **Inner Layer 1:** Continuous ground plane (primary return path)  
+- **Inner Layer 2:** 3.3V power plane  
+- **Bottom Layer:** Signal routing and breakout  
 
-### Layout Overview
 <p align="center">
   <img src="./Four_layers_stack.png" width="500"/>
 </p>
-![Figure 4: High-Speed Signal Routing and Ground Plane Geometry (Top Layer)](Four_layers_stack.png)
 
-*Top layer showing separation between power stage and control region.*
+<p align="center"><em>Top layer showing physical separation between switching power stage and low-noise control/sensor region.</em></p>
+
 <p align="center">
   <img src="./PCB_Layout_Bottom_Layer_Signal_Paths.png" width="500"/>
 </p>
-![Figure 5: Bottom Layer Signal Escape Routing and Via Strategy](PCB_Layout_Bottom_Layer_Signal_Paths.png)
 
-*Bottom layer used for signal escape routing and test access.*
+<p align="center"><em>Bottom layer used for controlled signal escape routing and via distribution.</em></p>
 
 ---
 
@@ -66,56 +61,85 @@ A 4-layer stackup is used to manage return paths and reduce noise coupling:
 
 ### Power Integrity
 
-- Buck-boost regulator selected to maintain stable system voltage under varying battery conditions  
-- High current paths kept short to reduce resistive losses and noise coupling  
+- Buck-boost regulator ensures stable output under:
+  - Battery voltage variation  
+  - Dynamic load conditions  
+- High di/dt switching loops minimized through tight placement of:
+  - Inductor  
+  - Switching IC  
+  - Input/output capacitors  
+
+**Design Focus:**  
+Reducing ripple and preventing switching noise from propagating into sensitive domains
+
+---
+
+### Signal Integrity (IMU / I2C)
+
+- SDA/SCL traces kept short and routed over continuous ground reference  
+- IMU placed away from switching nodes to reduce conducted and radiated noise  
+- Parasitic capacitance minimized to maintain clean I2C edges  
+
+**Design Focus:**  
+Maintaining stable communication and reducing jitter in sensor data acquisition
 
 ---
 
 ### EMI Mitigation
 
-- Switching loop area minimized around regulator and inductor  
-- Power stage physically separated from MCU and IMU regions  
-- Continuous ground reference used to control return currents  
+- Physical separation between:
+  - Power stage (noisy)  
+  - Control + sensor domain (sensitive)  
+- Continuous ground plane ensures controlled return current paths  
+- Switching loop area minimized to reduce radiated emissions  
 
 ---
 
-### Signal Integrity (I2C / Sensor)
+### Thermal Management
 
-- Short SDA/SCL routing to reduce parasitic effects  
-- Ground reference maintained beneath signal traces  
-- Avoided routing near switching nodes  
-
----
-
-### Thermal Handling
-
-- Power components placed with copper area for heat spreading  
+- Power components allocated copper area for heat spreading  
 - Thermal vias used to transfer heat into internal planes  
+
+**Design Focus:**  
+Preventing localized heating that could affect regulator stability and sensor accuracy  
 
 ---
 
 ## Design Review Notes
 
-- Identified critical switching current loops and minimized their area  
-- Maintained separation between noisy and sensitive domains  
+- Switching current loops identified and minimized at layout level  
+- Ground continuity preserved to avoid unintended return paths  
+- Sensor placement prioritized low-noise operation over routing convenience  
 
-**Potential risks:**
-- Noise coupling from power stage into sensor lines  
-- Transient response under dynamic load  
+**Potential Risks:**
+- Switching noise coupling into I2C lines under high load  
+- Output ripple affecting IMU measurement stability  
+- Transient response of buck-boost regulator under rapid load changes  
 
 ---
 
 ## Project Status
 
 - PCB design complete  
-- Not yet fabricated or electrically validated  
+- Pre-fabrication stage (no hardware validation yet)  
 
 ---
 
 ## Planned Validation
 
-- Power rail measurement (ripple, stability)  
-- Thermal observation under load  
-- STM32 bring-up and IMU communication testing  
+- Power rail characterization:
+  - Ripple measurement (oscilloscope)  
+  - Load transient response  
+
+- Sensor validation:
+  - I2C signal integrity (rise/fall behavior)  
+  - IMU data stability under power load variation  
+
+- Thermal testing:
+  - Regulator and inductor temperature under load  
+
+- Full system bring-up:
+  - STM32 initialization  
+  - IMU communication and data acquisition  
 
 ---
