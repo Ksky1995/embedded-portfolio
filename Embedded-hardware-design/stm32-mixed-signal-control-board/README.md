@@ -15,7 +15,7 @@ The primary design focus is maintaining **signal integrity for low-level sensor 
 </p>
 ![Figure 1: 3D Visualization of the Integrated Sensor & Power Management PCBA](STM32_PCBA_3D_Top_Assembly.png)
 
-*3D view used to verify component placement, connector accessibility, and overall board integration.*
+<p align="center"><em>*3D view used to verify component placement, connector accessibility, and overall board integration.*
 
 ---
 
