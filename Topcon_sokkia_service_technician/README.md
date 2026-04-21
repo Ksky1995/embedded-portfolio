@@ -45,7 +45,7 @@ Most work focused on bringing instruments back to field-ready condition without 
 ### Optical Calibration Setup (Total Station)
 
 <p align="center">
-  <img src="YOUR_IMAGE_1_PATH" width="520"/>
+  <img src="Stand_Collimator.png" width="520"/>
 </p>
 
 - Set up collimator-based alignment  
@@ -60,7 +60,7 @@ This is standard pre/post calibration work before returning a unit.
 ### Vertical Encoder Repair (Total Station)
 
 <p align="center">
-  <img src="YOUR_IMAGE_4_PATH" width="520"/>
+  <img src="Vertical_Encoder_Repair.png " width="520"/>
 </p>
 
 - Disassembled unit to access vertical encoder  
@@ -75,7 +75,7 @@ Focused on restoring encoder function rather than replacing the full module.
 ### Automatic Level Calibration
 
 <p align="center">
-  <img src="YOUR_IMAGE_5_PATH" width="520"/>
+  <img src="Auto_Level_ Calibration.png" width="520"/>
 </p>
 
 - Opened unit to access compensator system  
