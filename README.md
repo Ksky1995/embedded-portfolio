@@ -15,7 +15,10 @@ Repair and calibration of Topcon total stations and auto levels.
 - Diagnosed PCB faults and repaired vertical encoders  
 
 ![Vertical Encoder Repair](Vertical_Encoder_Repair.png)
-- Encoder disassembly and fault correction affecting angle measurement  
+<p align="center">
+  <img src="Vertical_Encoder_Repair.png " width="400"/>
+</p>
+Encoder disassembly and fault correction affecting angle measurement  
 
 ---
 
@@ -30,6 +33,9 @@ Repair and calibration of Topcon total stations and auto levels.
 - Integrated USB and RF on shared 3.3V supply  
 
 ![RF Top Layer](pcb_top_layer.png)
+<p align="center">
+  <img src="pcb_top_layer.png " width="520"/>
+</p>
 - RF trace and matching network placement  
 
 ---
@@ -41,6 +47,11 @@ STM32 + IMU system operating with switching regulator noise.
 - Designed 4-layer PCB with ground and 3.3V planes  
 - Integrated BQ25303 buck-boost and Li-ion charging  
 - Routed I2C and separated sensor from switching region  
+
+
+<p align="center">
+  <img src="./PCB_Layout_Top_Layer_Signal_Paths.png" width="400"/>
+</p>
 
 ![Mixed-Signal Layout](Four_layers_stack.png)
 - Separation of switching regulator and IMU control region  
