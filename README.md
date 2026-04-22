@@ -8,14 +8,14 @@ Focus on debugging, calibration, and system-level faults
 
 ### Precision Instrument Service Technician
 
-Repair and calibration of Topcon total stations and auto levels.
+Repair and calibration of Topcon and Sokkia total stations and auto levels.
 
 - Serviced 200+ instruments under manufacturer procedures  
 - Calibrated optical alignment and compensator systems  
 - Diagnosed PCB faults and repaired vertical encoders  
 
 <p align="center">
-  <img src="Topcon_sokkia_service_technician/Vertical_Encoder_Repair.png" width="400"/>
+  <img src="Topcon_sokkia_service_technician/Vertical_Encoder_Repair.png" width="300"/>
 </p>
 Encoder disassembly and fault correction affecting angle measurement  
 
