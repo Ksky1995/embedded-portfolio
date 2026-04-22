@@ -48,7 +48,7 @@ STM32 + IMU system operating with switching regulator noise.
 
 
 <p align="center">
-  <img src="Embedded-hardware-design/rf-embedded-development-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="400"/>
+  <img src="Embedded-hardware-design/stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="400"/>
 </p>
 
 Separation of switching regulator and IMU control region  
