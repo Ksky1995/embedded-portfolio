@@ -45,13 +45,18 @@ Calibration and repair of Topcon and Sokkia total stations and auto levels.
 
 4-layer embedded system integrating MCU, IMU, and switching power stage.
 
-- Used a dedicated ground plane to keep return paths continuous for I2C and switching currents  
-- Routed I2C close to ground and kept it away from high di/dt switching nodes  
-- Separated power stage from sensor area to reduce noise coupling into IMU  
-- Integrated buck-boost regulator and Li-ion charging on the same board  
+- Used STM32F411CEU6 as main controller with local decoupling at each VDD pin
+- Integrated MPU-6050 IMU with short I2C routing to reduce noise sensitivity
+- Used TPS63001 buck-boost regulator to maintain stable system rail under battery variation
+- Integrated BQ25303 Li-ion charger with power path shared on the same board
+
+- Used a dedicated ground plane to keep return paths continuous for I2C and switching currents
+- Routed I2C close to ground and kept it away from high di/dt switching nodes
+- Separated TPS63001 switching stage from MPU-6050 region to reduce noise coupling
+- Managed power and signal interaction on shared 3.3V rail
 
 <p align="center">
-  <img src="Embedded-hardware-design/stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="420"/>
+<img src="Embedded-hardware-design/stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="420"/>
 </p>
 
 <p align="center">
@@ -62,21 +67,20 @@ Calibration and repair of Topcon and Sokkia total stations and auto levels.
 
 ### RF Embedded Development Board
 
-Sub-GHz RF platform designed under shared digital and power constraints.
+2.4 GHz wireless platform built around STM32WB55 with integrated RF and USB.
 
-- Built RF path with discrete 50Ω matching network based on trace geometry and placement  
-- Kept impedance consistent by avoiding vias and sudden width changes  
-- Controlled return path through ground to reduce coupling and radiation  
-- Checked interaction between RF and digital circuits sharing the same 3.3V rail  
+- Used STM32WB55CCU6 with external LC matching network (L4, C18, C19) and output filter (LPF2)  
+- Kept RF path short and continuous, placing matching network close to RF pin  
+- Maintained solid ground reference under RF trace to control return current  
+- Separated RF section from USB and digital areas through placement  
 
 <p align="center">
   <img src="Embedded-hardware-design/rf-embedded-development-board/pcb_top_layer.png" width="520"/>
 </p>
 
 <p align="center">
-  <em>RF trace routing with matching network placed close to output stage</em>
+  <em>RF path from STM32WB55 through matching network to antenna output</em>
 </p>
-
 ---
 
 ## Software Project
