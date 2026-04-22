@@ -10,7 +10,7 @@ STM32 • Mixed-Signal Systems • RF Design • Hardware Debugging
 
 Electronics engineer with hands-on work in **precision instrument repair and PCB fault diagnosis**, now focused on **embedded hardware design and system integration**.
 
-Worked on **200+ surveying instruments**, finding and fixing faults across optical, electronic, and mechanical systems. This experience drives a design approach focused on **noise control, signal integrity, and real-world reliability**.
+Serviced and calibrated **200+ high-precision surveying instruments** under a **Topcon authorized dealer**, diagnosing failures across optical, electronic, and mechanical subsystems.
 
 Currently building embedded hardware with focus on:
 - Signal integrity in mixed-signal systems  
