@@ -32,7 +32,7 @@ Encoder disassembly and fault correction affecting angle measurement
 - Integrated USB and RF on shared 3.3V supply  
 
 <p align="center">
-  <img src="rf-embedded-development-board/pcb_top_layer.png" width="520"/>
+  <img src="Embedded-hardware-design/pcb_top_layer.png" width="520"/>
 </p>
 RF trace and matching network placement  
 
@@ -48,7 +48,7 @@ STM32 + IMU system operating with switching regulator noise.
 
 
 <p align="center">
-  <img src="stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="400"/>
+  <img src="Embedded-hardware-design/PCB_Layout_Top_Layer_Signal_Paths.png" width="400"/>
 </p>
 
 Separation of switching regulator and IMU control region  
