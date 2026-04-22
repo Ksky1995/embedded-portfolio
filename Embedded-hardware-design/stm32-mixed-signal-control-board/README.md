@@ -85,8 +85,10 @@ A 4-layer stackup is used not for convenience, but to control **return current b
 ## Layout Execution (Where Design Either Works or Fails)
 
 ### Top Layer – Domain Separation & Noise Containment
-
-![Figure 3: Top Layer Routing](Four_layers_stack.png)
+<p align="center">
+  <img src="./PCB_Top_Layer_Signal_Paths.png" width="500"/>
+</p>
+![Figure 3: Top Layer Routing](PCB_Top_Layer_Signal_Paths.png)
 
 **What this shows:**
 - Physical isolation between:
@@ -100,6 +102,9 @@ A 4-layer stackup is used not for convenience, but to control **return current b
 ---
 
 ### Bottom Layer – Return Path Control & Signal Escape
+<p align="center">
+  <img src="./PCB_Layout_Bottom_Layer_Signal_Paths.png" width="500"/>
+</p>
 
 ![Figure 4: Bottom Layer Routing](PCB_Layout_Bottom_Layer_Signal_Paths.png)
 
