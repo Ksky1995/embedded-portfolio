@@ -43,7 +43,7 @@ So the question becomes less about placement alone, and more about how effective
 
 ---
 
-**🔎 Review Question**  
+** Review Question**  
 Does physical separation meaningfully reduce RF interference without electrical isolation?
 
 ---
@@ -70,7 +70,7 @@ At this stage, the design is already constrained by those shared paths.
 
 ---
 
-**🔎 Review Question**  
+**Review Question**  
 Which path dominates RF degradation: power coupling, ground return, or direct radiation?
 
 ---
@@ -101,7 +101,7 @@ So while the RF trace is controlled, it is not operating in a quiet environment.
 
 ---
 
-**🔎 Review Question**  
+**Review Question**  
 At what point does nearby digital routing begin to impact RF performance?
 
 ---
@@ -127,7 +127,7 @@ This is one of the areas where performance issues tend to show up after fabricat
 
 ---
 
-**🔎 Review Question**  
+**Review Question**  
 Do high-frequency return currents from USB overlap the RF return path?
 
 ---
@@ -148,7 +148,7 @@ So while the design targets 50Ω, that’s still an assumption until measured.
 
 ---
 
-**🔎 Review Question**  
+**Review Question**  
 What does the measured S11 look like after fabrication?
 
 ---
@@ -175,7 +175,7 @@ Depending on how well it is decoupled, this can affect:
 
 ---
 
-**🔎 Review Question**  
+**Review Question**  
 What level of supply noise reaches the RF front-end during active USB operation?
 
 ---
