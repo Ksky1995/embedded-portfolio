@@ -15,6 +15,7 @@ Repair and calibration of Topcon and Sokkia total stations and auto levels.
 
 <p align="center">
   <img src="Topcon_sokkia_service_technician/Vertical_Encoder_Repair.png" width="300"/>
+  <i>Encoder disassembly and fault correction affecting angle measurement</i>
 </p>
 <i>Encoder disassembly and fault correction affecting angle measurement</i></p>
 
