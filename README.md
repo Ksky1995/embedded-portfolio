@@ -43,24 +43,14 @@ Calibration and repair of Topcon and Sokkia total stations and auto levels.
 
 ### STM32 Mixed-Signal Control Board
 
-4-layer embedded system integrating MCU, IMU, and switching power stage.
+4-layer MCU + IMU + power integration under switching noise constraints.
 
-- Used STM32F411CEU6 as main controller with local decoupling at each VDD pin
-- Integrated MPU-6050 IMU with short I2C routing to reduce noise sensitivity
-- Used TPS63001 buck-boost regulator to maintain stable system rail under battery variation
-- Integrated BQ25303 Li-ion charger with power path shared on the same board
-
-- Used a dedicated ground plane to keep return paths continuous for I2C and switching currents
-- Routed I2C close to ground and kept it away from high di/dt switching nodes
-- Separated TPS63001 switching stage from MPU-6050 region to reduce noise coupling
-- Managed power and signal interaction on shared 3.3V rail
+- STM32F411CEU6 + MPU-6050 + TPS63001 + BQ25303 on shared 3.3V rail  
+- Continuous GND plane with short I2C routing away from switching nodes  
+- Power stage isolated from sensor region to limit noise coupling  
 
 <p align="center">
-<img src="Embedded-hardware-design/stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="420"/>
-</p>
-
-<p align="center">
-  <em>Layout partitioning: switching regulator isolated from IMU signal region</em>
+  <img src="Embedded-hardware-design/stm32-mixed-signal-control-board/PCB_Layout_Top_Layer_Signal_Paths.png" width="420"/>
 </p>
 
 ---
