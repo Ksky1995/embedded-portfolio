@@ -28,7 +28,6 @@ Calibration and repair of Topcon and Sokkia total stations and auto levels.
 - Serviced 200+ instruments following manufacturer procedures  
 - Adjusted optical alignment and compensator systems  
 - Repaired PCB faults including vertical encoder issues affecting angle measurement  
-- Isolated faults across analog, digital, and mechanical subsystems  
 
 <p align="center">
   <img src="Topcon_sokkia_service_technician/Vertical_Encoder_Repair.png" width="320"/>
